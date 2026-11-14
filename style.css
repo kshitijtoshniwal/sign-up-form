@@ -1,0 +1,144 @@
+/* Page layout */
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url("images/Norse-Bold.otf") format("opentype");
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.right-side {
+    width: 60%;
+    padding: 60px 50px;
+    background-color: #f9fafb;
+}
+
+.intro {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 40px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 25px 30px;
+    margin: 0 -50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 40px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 40%;
+}
+
+.form-row label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-row input:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 1px;
+    border: 1px solid #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+}
+
+.form-row input[type="password"]:user-invalid {
+    border: 1px solid #dc2626;
+}
+
+button {
+    background-color: #596d48;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.login-text {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #596d48;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #435536;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo-container img {
+    height: 80px;
+    width: auto;
+}
+
+.logo-container span {
+    font-family: "Norse", sans-serif;
+    font-size: 80px;
+    color: white;
+}
+
+.photo-credit {
+    margin-top: auto;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.photo-credit a {
+    color: white;
+}
